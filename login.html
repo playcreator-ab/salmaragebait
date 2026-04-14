@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personnel Auth | SalmaRage Committee</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="components.js"></script>
+    <style>
+        .login-card { background: rgba(15, 15, 18, 0.95); backdrop-filter: blur(16px); border: 1px solid rgba(239, 68, 68, 0.2); box-shadow: 0 0 60px rgba(0, 0, 0, 0.9); }
+        body { min-height: 100vh; display: flex; flex-direction: column; }
+    </style>
+</head>
+<body class="hero-gradient">
+    <div id="marquee-component" data-text="RESTRICTED ACCESS • AUTHORIZED PERSONNEL ONLY • LOG ALL 'OHHHH YES' INCIDENTS • SALMARAGE PROTOCOL ACTIVATED • VERIFYING STUDENT CREDENTIALS •"></div>
+    <div id="nav-component"></div>
+
+    <!-- Background Grid -->
+    <div class="hallway-bg"></div>
+
+    <main class="flex-1 flex flex-col items-center justify-center px-6 py-12 relative z-10">
+        
+        <!-- Header Brand -->
+        <div class="mb-10 text-center">
+            <div class="mb-6 inline-flex items-center gap-2 bg-red-950/30 border border-red-500/50 px-4 py-1.5 rounded-full text-red-500 text-[10px] font-black tracking-widest uppercase flicker">
+                <span class="w-2 h-2 bg-red-500 rounded-full animate-ping"></span>
+                Secure Operative Gateway
+            </div>
+            <h1 class="text-4xl md:text-6xl font-black mb-2 tracking-tighter uppercase glitch-text">
+                ACCESS <span class="text-red-600">DENIED.</span>
+            </h1>
+            <p class="text-zinc-500 text-xs font-medium uppercase tracking-[0.3em]">Verify credentials to bypass lockdown</p>
+        </div>
+
+        <!-- Login Container -->
+        <div class="login-card w-full max-w-md rounded-2xl p-8 md:p-10 overflow-hidden">
+            
+            <form onsubmit="return false;" class="space-y-6 relative z-20">
+                <div>
+                    <label class="block text-[10px] font-black uppercase tracking-[0.2em] text-zinc-500 mb-2 ml-1">Student / Operative ID</label>
+                    <input type="text" placeholder="SR-XXXX-2024" class="input-field w-full px-4 py-4 rounded-xl text-white placeholder:text-zinc-800 font-mono text-sm uppercase">
+                </div>
+
+                <div>
+                    <label class="block text-[10px] font-black uppercase tracking-[0.2em] text-zinc-500 mb-2 ml-1">Access Keycode</label>
+                    <input type="password" placeholder="••••••••" class="input-field w-full px-4 py-4 rounded-xl text-white placeholder:text-zinc-800 font-mono text-sm">
+                </div>
+
+                <div class="flex items-center justify-between py-2">
+                    <label class="flex items-center gap-2 cursor-pointer group">
+                        <input type="checkbox" class="accent-red-600 bg-black border-zinc-800 rounded">
+                        <span class="text-[10px] font-bold text-zinc-600 uppercase group-hover:text-zinc-400 transition">Stay Authenticated</span>
+                    </label>
+                    <a href="#" class="text-[10px] font-bold text-red-600 uppercase hover:text-red-400 transition tracking-wider">Access Help</a>
+                </div>
+
+                <button class="btn-red w-full text-white py-4 rounded-xl font-black text-sm uppercase tracking-[0.2em] mt-4">
+                    Authorize Entry
+                </button>
+            </form>
+
+            <div class="mt-10 pt-6 border-t border-zinc-900 text-center relative z-20">
+                <p class="text-zinc-700 text-[9px] font-bold uppercase tracking-widest leading-relaxed">
+                    WARNING: Unauthorized attempts are logged.<br/>
+                    <span class="text-red-900/50">"That's what she said." — Committee Bylaw 4.1</span>
+                </p>
+            </div>
+        </div>
+
+        <!-- Secondary Links -->
+        <div class="mt-8 flex gap-8">
+            <a href="#" class="text-zinc-600 hover:text-red-500 text-[10px] font-black uppercase tracking-[0.2em] transition">
+                Return to Lobby
+            </a>
+            <a href="#" class="text-zinc-600 hover:text-red-500 text-[10px] font-black uppercase tracking-[0.2em] transition">
+                Emergency Protocol
+            </a>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="p-10 border-t border-zinc-900 text-center relative z-10">
+        <p class="text-[10px] text-zinc-700 font-mono uppercase tracking-[0.3em]">
+            © 2024 SRBC_SCHOOL_OPS — SYSTEM_STATUS: ENCRYPTED // BAIT_LEVEL: OPTIMAL
+        </p>
+    </footer>
+
+</body>
+</html>

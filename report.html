@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Intel | SalmaRage Committee</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="components.js"></script>
+</head>
+<body class="hero-gradient-top min-h-screen">
+    <div id="marquee-component" data-text="SUBMIT ALL INTEL IMMEDIATELY • DO NOT BREAK CHARACTER • LOGGING INCIDENT #4421 • SALMA IS WATCHING •"></div>
+    <div id="nav-component"></div>
+    
+    <div class="hallway-bg"></div>
+    <main class="max-w-3xl mx-auto px-6 py-12 relative z-10">
+        <header class="mb-12">
+            <h1 class="text-4xl font-black uppercase tracking-tighter mb-2">Log <span class="text-red-600">Incident</span></h1>
+            <p class="text-zinc-500 text-xs font-bold uppercase tracking-widest">Form SR-88: Operative Field Report</p>
+        </header>
+        <form class="space-y-8 bg-zinc-900/40 p-8 rounded-2xl border border-zinc-800">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                    <label class="block text-[10px] font-black uppercase tracking-widest text-zinc-500 mb-2">Target Name</label>
+                    <input type="text" placeholder="e.g., Mohammed B." class="input-field w-full px-4 py-3 rounded-lg text-sm text-white">
+                </div>
+                <div>
+                    <label class="block text-[10px] font-black uppercase tracking-widest text-zinc-500 mb-2">Location</label>
+                    <select class="input-field w-full px-4 py-3 rounded-lg text-sm text-zinc-400 appearance-none">
+                        <option>Cafeteria</option>
+                        <option>Hallway C (Locker Row)</option>
+                        <option>Library (Silent Zone)</option>
+                        <option>Gym</option>
+                    </select>
+                </div>
+            </div>
+
+            <div>
+                <label class="block text-[10px] font-black uppercase tracking-widest text-zinc-500 mb-2">The Setup (The "Bait")</label>
+                <textarea rows="3" placeholder="What did they say that triggered the protocol?" class="input-field w-full px-4 py-3 rounded-lg text-sm text-white"></textarea>
+            </div>
+
+            <div>
+                <label class="block text-[10px] font-black uppercase tracking-widest text-zinc-500 mb-2">The Punchline (The "Salma-fication")</label>
+                <input type="text" placeholder="e.g., 'That's what Salma said yesterday'" class="input-field w-full px-4 py-3 rounded-lg text-sm italic">
+            </div>
+            <div>
+                <label class="block text-[10px] font-black uppercase tracking-widest text-zinc-500 mb-2">Rage Intensity (1-10)</label>
+                <input type="range" min="1" max="10" class="w-full accent-red-600">
+                <div class="flex justify-between text-[10px] font-bold text-zinc-600 mt-1">
+                    <span>MILD IRRITATION</span>
+                    <span>ABSOLUTE RAGE</span>
+                </div>
+            </div>
+
+            <button type="submit" class="w-full bg-red-600 hover:bg-red-700 text-white font-black py-4 rounded-xl uppercase tracking-widest transition transform hover:scale-[1.01] active:scale-[0.98]">
+                Transmit to Committee
+            </button>
+        </form>
+    </main>
+
+    <footer class="p-10 text-center relative z-10">
+        <p class="text-[10px] text-zinc-700 font-mono uppercase tracking-[0.3em]">
+            SECURE UPLOAD — ENCRYPTION AES-256 — OPERATIVE: ANONYMOUS
+        </p>
+    </footer>
+</body>
+</html>
